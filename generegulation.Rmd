@@ -4,7 +4,7 @@ vignette: >
   %\VignetteEngine{knitr::rmarkdown}
 ---
 
-# ![](/images/icons/help.gif)Finding Candidate Binding Sites for Known Transcription Factors via Sequence Matching
+# Finding Candidate Binding Sites for Known Transcription Factors via Sequence Matching
 
 
 The binding of transcription factor proteins (TFs) to DNA promoter
