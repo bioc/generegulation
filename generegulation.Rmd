@@ -94,7 +94,8 @@ if (Sys.getenv("NODE_NAME") == "master")
 
 
 ```{r eval=FALSE}
-source("http://bioconductor.org/biocLite.R")
+## try http:// if https:// URLs are not supported
+source("https://bioconductor.org/biocLite.R")
 biocLite(c("MotifDb",  "GenomicFeatures", 
            "TxDb.Scerevisiae.UCSC.sacCer3.sgdGene",
            "org.Sc.sgd.db", "BSgenome.Scerevisiae.UCSC.sacCer3",
