@@ -1,11 +1,12 @@
 ---
+title: Finding Candidate Binding Sites for Known Transcription Factors via Sequence Matching
+output:
+  html_document:
+    toc: true
 vignette: >
   %\VignetteIndexEntry{Finding Candidate Binding Sites for Known Transcription Factors via Sequence Matching}
   %\VignetteEngine{knitr::rmarkdown}
 ---
-
-# Finding Candidate Binding Sites for Known Transcription Factors via Sequence Matching
-
 
 The binding of transcription factor proteins (TFs) to DNA promoter
 regions upstream of gene transcription start sites (TSSs) is one of
@@ -21,16 +22,7 @@ candidate TF binding sites in DNA sequence using the model organism
 Saccharomyces cerevisiae.  The methods demonstrated here apply equally
 well to other organisms.
 
-* [Introduction](#introduction)
-* [Installation](#install-and-use)
-* [Biological Background](#biological-background)
-* [Introduction to Motif-based Sequence Search](#sequence-search)
-* [Minimal Example](#compact-summary)  
-* [Sample Workflow](#sample-workflow) (an extended example)
-* [Biological Summary](#biological-summary)
-* [Exploring Package Content](#exploring-package-content)
-
-<h2 id="introduction">Introduction</h2>
+# Introduction
 
 Eukaryotic gene regulation can be very complex.  Transcription factor
 binding to promoter DNA sequences is a stochastic process, and
@@ -59,7 +51,7 @@ packages and methods allow us to
 
 <p class="back_to_top">[ <a href="#top">Back to top</a> ]</p>
 
-<h2 id="install-and-use">Installation and Use</h2>
+# Installation and Use
 
 To install the necessary packages and all of their
 dependencies, evaluate the commands
@@ -138,7 +130,7 @@ These instructions are required once in each R session.
 
 <p class="back_to_top">[ <a href="#top">Back to top</a> ]</p>
 
-<h2 id="biological-background">Biological Background</h2>
+# Biological Background
 
 The x-y plot below displays expression levels of seven genes across 200 conditions, from a
 compendium of yeast expression data which accompanies 
@@ -217,7 +209,7 @@ from one of those factors from MotifDb, DAL80.
 
 <p class="back_to_top">[ <a href="#top">Back to top</a> ]</p>
 
-<h2 id="sequence-search">Sequence Search</h2>
+# Sequence Search
 
 Sequence-based transcription factor binding site search methods answer
 two questions:
@@ -263,7 +255,7 @@ bp downstream in the analyses below.
 <p class="back_to_top">[ <a href="#top">Back to top</a> ]</p>
 
 
-<h2 id="compact-summary">Minimal Example</h2>
+# Minimal Example
 
 Only eight lines of code (excluding  <code>library</code>
 statements) are required to find two matches to the JASPAR DAL80 motif in the promoter of DAL1.
@@ -293,7 +285,7 @@ matchPWM(pcm.dal80.jaspar, unlist(promoter.dal1)[[1]], "90%")
 <p class="back_to_top">[ <a href="#top">Back to top</a> ]</p>
 
 
-<h2 id="sample-workflow">Sample Workflow: an extended example</h2>
+# Sample Workflow: an extended example
 
 We begin by visualizing DAL80's TF binding motif using either of two Bioconductor
 packages: seqLogo, and motifStack.  First, query MotifDb for the PFM (position
@@ -488,7 +480,7 @@ Such analyses will be left as an exercise for the reader.
 
 <p class="back_to_top">[ <a href="#top">Back to top</a> ]</p>
 
-<h2 id="biological-summary">Biological Summary</h2>
+# Biological Summary
 
 This dataset and our exploration has revealed a number of GATAA
 binding sites within these tighly co-regulated NCR genes, but leaves
@@ -529,7 +521,7 @@ clarify them.
 
 <p class="back_to_top">[ <a href="#top">Back to top</a> ]</p>
 
-<h2 id="exploring-package-content">Exploring Package Content</h2>
+# Exploring Package Content
 
 The packages used here have extensive help pages, and include vignettes
 highlighting common use cases. The help pages and vignettes are available from
