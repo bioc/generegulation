@@ -139,7 +139,7 @@ compendium of yeast expression data which accompanies
 function":
 
 <center>
-<img src="compendium.png" width="100%" alt="compendium.png not found">
+<img src="compendium.png" width="100%" alt="compendium.png">
 </center>
 
 <br>
@@ -166,7 +166,7 @@ transcription factor binding sites.
 <br>
 <a name="network"></a>
 <center>
-<img src="dal80-subnet.png" width=500 alt="dal80-subnet.png not found">
+<img src="dal80-subnet.png" width=500 alt="dal80-subnet.png">
 </center>
 <br>
 
@@ -237,7 +237,7 @@ href="http://www.ncbi.nlm.nih.gov/pubmed?term=19258451">Kristiansson et al</a>, 
 </blockquote>
 
 <center>
-<img src="scerPromoterLength.png" width=500 alt="scerPromoterLength.png not found">
+<img src="scerPromoterLength.png" width=500 alt="scerPromoterLength.png">
 </center>
 <br>
 
