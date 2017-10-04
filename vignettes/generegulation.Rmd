@@ -103,18 +103,10 @@ To use these packages in an R session, evaluate these commands:
 
 
 ```{r echo=FALSE}
-suppressPackageStartupMessages(library(MotifDb))
-suppressPackageStartupMessages(library(S4Vectors))
-suppressPackageStartupMessages(library(seqLogo))
-suppressPackageStartupMessages(library(motifStack))
-suppressPackageStartupMessages(library(Biostrings))
-suppressPackageStartupMessages(library(GenomicFeatures))
-suppressPackageStartupMessages(library(org.Sc.sgd.db))
-suppressPackageStartupMessages(library(BSgenome.Scerevisiae.UCSC.sacCer3))
-suppressPackageStartupMessages(library(TxDb.Scerevisiae.UCSC.sacCer3.sgdGene))
+suppressPackageStartupMessages(library(generegulation))
 ```
 
-```{r}
+```{r eval=FALSE}
 library(MotifDb)
 library(S4Vectors)
 library(seqLogo)
@@ -260,7 +252,7 @@ bp downstream in the analyses below.
 Only eight lines of code (excluding  <code>library</code>
 statements) are required to find two matches to the JASPAR DAL80 motif in the promoter of DAL1.
 
-```{r}
+```{r eval=FALSE}
 library(MotifDb)
 library(seqLogo)
 library(motifStack)
@@ -269,7 +261,10 @@ library(GenomicFeatures)
 library(org.Sc.sgd.db)
 library(BSgenome.Scerevisiae.UCSC.sacCer3)
 library(TxDb.Scerevisiae.UCSC.sacCer3.sgdGene)
+```
 
+
+```{r}
 query(MotifDb, "DAL80")   
 pfm.dal80.jaspar <- query(MotifDb,"DAL80")[[1]]
 seqLogo(pfm.dal80.jaspar)
