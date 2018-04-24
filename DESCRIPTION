@@ -1,6 +1,6 @@
 Package: generegulation
 Title: Finding Candidate Binding Sites for Known Transcription Factors via Sequence Matching
-Version: 1.1.1
+Version: 1.1.2
 Date: 2017-09-05
 Authors@R: c(person(role=c("aut", "cre"), "Bioconductor Package Maintainer", email = "maintainer@bioconductor.org"))
 Description: The binding of transcription factor proteins (TFs) to DNA promoter
@@ -29,6 +29,6 @@ Encoding: UTF-8
 LazyData: true
 VignetteBuilder: knitr
 biocViews: Workflow, EpigeneticsWorkflow
-Suggests: knitr, rmarkdown
+Suggests: knitr, rmarkdown, BiocStyle
 NeedsCompilation: no
 URL: https://www.bioconductor.org/help/workflows/generegulation/ 

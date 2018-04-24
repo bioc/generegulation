@@ -1,26 +1,44 @@
 ---
 title: Finding Candidate Binding Sites for Known Transcription Factors via Sequence Matching
 output:
-  html_document:
-    toc: true
+  BiocStyle::html_document
+date: 6 Oct 2017
 vignette: >
   %\VignetteIndexEntry{Finding Candidate Binding Sites for Known Transcription Factors via Sequence Matching}
   %\VignetteEngine{knitr::rmarkdown}
+author:
+- name: Bioconductor Maintainer
+  affiliation: Roswell Park Cancer Institute, Elm and Carlton St, Buffalo, NY 14263
+  email: maintainer@bioconductor.org
+abstract: >
+  The binding of transcription factor proteins (TFs) to DNA promoter
+  regions upstream of gene transcription start sites (TSSs) is one of
+  the most important mechanisms by which gene expression, and thus many
+  cellular processes, are controlled.  Though in recent years many new
+  kinds of data have become available for identifying transcription
+  factor binding sites (TFBSs) -- ChIP-seq and DNase I hypersensitivity
+  regions among them -- sequence matching continues to play an important
+  role.
+
+  In this workflow we demonstrate Bioconductor techniques for finding
+  candidate TF binding sites in DNA sequence using the model organism
+  Saccharomyces cerevisiae.  The methods demonstrated here apply equally
+  well to other organisms.
 ---
 
-The binding of transcription factor proteins (TFs) to DNA promoter
-regions upstream of gene transcription start sites (TSSs) is one of
-the most important mechanisms by which gene expression, and thus many
-cellular processes, are controlled.  Though in recent years many new
-kinds of data have become available for identifying transcription
-factor binding sites (TFBSs) -- ChIP-seq and DNase I hypersensitivity
-regions among them -- sequence matching continues to play an important
-role.
-
-In this workflow we demonstrate Bioconductor techniques for finding
-candidate TF binding sites in DNA sequence using the model organism
-Saccharomyces cerevisiae.  The methods demonstrated here apply equally
-well to other organisms.
+# Version Info
+```{r, echo=FALSE, results="hide", warning=FALSE}
+suppressPackageStartupMessages({
+library('generegulation')
+})
+```
+<p>
+**R version**: `r R.version.string`
+<br />
+**Bioconductor version**: `r BiocInstaller::biocVersion()`
+<br />
+**Package version**: `r packageVersion("generegulation")`
+</p>
 
 # Introduction
 
