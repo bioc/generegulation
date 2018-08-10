@@ -35,7 +35,7 @@ library('generegulation')
 <p>
 **R version**: `r R.version.string`
 <br />
-**Bioconductor version**: `r BiocInstaller::biocVersion()`
+**Bioconductor version**: `r BiocManager::version()`
 <br />
 **Package version**: `r packageVersion("generegulation")`
 </p>
@@ -80,8 +80,9 @@ dependencies, evaluate the commands
 if (Sys.info()['sysname'] == "Darwin" && 
     (!"grImport" %in% rownames(installed.packages())))
 {
-    library(BiocInstaller)
-    biocLite("grImport", type="source")
+if (!"BiocManager" %in% rownames(installed.packages()))
+     install.packages("BiocManager")
+install("grImport", type="source")
 }
 ```
 
@@ -105,8 +106,8 @@ if (Sys.getenv("NODE_NAME") == "master")
 
 ```{r eval=FALSE}
 ## try http:// if https:// URLs are not supported
-source("https://bioconductor.org/biocLite.R")
-biocLite(c("MotifDb",  "GenomicFeatures", 
+library(BiocManager)
+BiocManager::install(c("MotifDb",  "GenomicFeatures", 
            "TxDb.Scerevisiae.UCSC.sacCer3.sgdGene",
            "org.Sc.sgd.db", "BSgenome.Scerevisiae.UCSC.sacCer3",
            "motifStack", "seqLogo"))
