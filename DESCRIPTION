@@ -1,6 +1,6 @@
 Package: generegulation
 Title: Finding Candidate Binding Sites for Known Transcription Factors via Sequence Matching
-Version: 1.6.0
+Version: 1.7.0
 Date: 2017-09-05
 Authors@R: c(person(role=c("aut", "cre"), "Bioconductor Package Maintainer", email = "maintainer@bioconductor.org"))
 Description: The binding of transcription factor proteins (TFs) to DNA promoter
